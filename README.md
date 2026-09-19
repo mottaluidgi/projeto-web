@@ -18,6 +18,13 @@ npm run dev
 npm run build      (gera a pasta dist, com JS e CSS minificados)
 npm run preview    (serve a pasta dist localmente)
 
+## Medições do build
+| Arquivo | Bruto | Gzip |
+| --- | --- | --- |
+| dist/html/index.html | 1.66 kB | 0.82 kB |
+| dist/assets/index-DQRgWclf.css | 3.21 kB | 1.25 kB |
+| dist/assets/index-DhYnMED2.js | 8.43 kB | 3.54 kB |
+
 ## Testes
 Manuais, com roteiro: rotas e botões voltar/avançar, validação do formulário, localStorage (incluindo valor corrompido), gráfico, teclado (Tab, Enter, Esc) e temas claro/escuro.
 
