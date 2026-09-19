@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Loja SPA</title>
+  <meta name="description" content="SPA em JavaScript puro com roteamento, formulário validado e gráfico.">
+  <link rel="icon" href="/imagens/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js" defer></script>
+  <script type="module" src="../js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#app">Ir para o conteúdo</a>
+
+  <header class="topo">
+    <a class="marca" href="#/" data-link>
+      <img src="/imagens/logo.svg" alt="" width="32" height="32">
+      Loja SPA
+    </a>
+    <nav aria-label="Principal">
+      <ul id="menu">
+        <li><a href="#/" data-link>Início</a></li>
+        <li><a href="#/sobre" data-link>Sobre</a></li>
+        <li><a href="#/produtos" data-link>Produtos</a></li>
+        <li><a href="#/contato" data-link>Contato</a></li>
+      </ul>
+    </nav>
+    <button id="btn-tema" class="btn" type="button" aria-pressed="false">Modo escuro</button>
+    <p class="carrinho">Carrinho: <span id="contador" aria-live="polite">0</span> item(ns)</p>
+    <button id="btn-menu" class="btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menu">&#9776;</button>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+  <noscript><p>Este site precisa de JavaScript ativado.</p></noscript>
+
+  <footer class="rodape">
+    <p>Projeto acadêmico de front-end.</p>
+  </footer>
+</body>
+</html>
